@@ -2,7 +2,7 @@ import { PetType } from './../models/pet.model';
 import { Directive, Input, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appBackground]'
+  selector: '[appBackgroundColor]'
 })
 export class BackgroundColorDirective {
 

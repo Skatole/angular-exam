@@ -7,10 +7,11 @@ import { Pet } from 'src/app/models/pet.model';
   selector: 'app-list',
   template: `
 <ng-container *ngFor="let pet of pets">
-    <p appBackground [petType]="pet.type">{{ pet.name }}</p>
+    <p appBackgroundColor [petType]="pet.type">{{ pet.name }}</p>
     <p> {{pet.type}} </p>
     <p>{{pet.description | tooLong }}</p>
 </ng-container>
+<button routerLink='add' routerlinkActive="true">Add Pet Page</button>
   `,
   styles: [``]
 })

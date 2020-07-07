@@ -20,7 +20,7 @@ import { Pet } from 'src/app/models/pet.model';
       Description
     </label>
 </form>
-<button [disabled]="showForm.invalid" (click)="onAdd()">Add pet</button>
+<button [disabled]="showForm.invalid" (click)="onAdd()" routerLink="list" routerLinkActive='true'>Add pet</button>
   `,
   styles: [``]
 })

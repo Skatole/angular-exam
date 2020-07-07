@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './routing/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,11 +16,12 @@ import { TooLongPipe } from './pipes/too-long.pipe';
     ListComponent,
     BackgroundColorDirective,
     AddComponent,
-    TooLongPipe
+    TooLongPipe,
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
